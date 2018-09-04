@@ -1,0 +1,15 @@
+master:
+  replicaCount: 1
+  image:
+    repository: locust-tasks
+    tag: latest
+    pullPolicy: IfNotPresent
+
+slave:
+  replicaCount: 2
+  image:
+    repository: locust-tasks
+    tag: latest
+    pullPolicy: IfNotPresent
+
+targetHost: http://www.google.com
