@@ -8,5 +8,4 @@ RUN pip install -r /locust-tasks/requirements.txt
 EXPOSE 5557 5558 8089
 
 RUN chmod 755 run.sh
-
 ENTRYPOINT ["bash", "./run.sh"]
